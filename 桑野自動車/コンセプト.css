@@ -1,0 +1,38 @@
+body{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url(background1.jpeg);
+}
+
+h1{
+  background-color: gray;
+  border-top: orange double 4px;
+  border-bottom: orange double 4px;
+}
+
+h2{
+  padding-bottom: 30px;
+  border-bottom: black double 4px;
+}
+
+#all{
+  width: 80%;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#nav{
+  width: 100%;
+}
+
+#nav ul{
+  list-style: none;
+  display: flex;
+  float: right;
+}
+
+#nav ul li{
+  padding-right: 8px;
+  font-size: 10px;
