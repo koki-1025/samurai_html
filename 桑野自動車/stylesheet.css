@@ -1,3 +1,5 @@
+
+
 /* レスポンシブデザイン */
 @media screen and (max-width:640px) {
   body{
@@ -25,20 +27,23 @@
   .swiper-container-button-prev {
      font-size: 1px;
   }
-  .swiper-container-button-next{
-
-  }
+ 
   #nav{
     font-size: 0.5rem;
   }
 
+  
+
   #item{
     height: 170px !important;
+    border: none !important;
   }
 
   #item .center-item{
     height: 170px;
     width: 340px;
+    width: 33%;
+    height: 70%;
   }
   #item .center-item img{
     margin-top: 50%;
@@ -46,6 +51,8 @@
   #item .item{
     height: 170px;
     width: 340px;
+    width: 34%;
+    height: 70%;
   }
 #kuwano{
   margin: 0 !important;
@@ -64,12 +71,26 @@
 .coment{
   display: block !important;
 }
+.coment img{
+  width: 200px;
+  height: 100px;
+}
 .coment p{
   width: 100% !important;
   font-size: 10px;
 }
+.coment ul{
+  width: 100% !important;
+  font-size: 10px;
+  line-height: 120%;
+  padding: 0;
+}
 .introduction{
   display: block !important;
+}
+.introduction img{
+  width: 200px;
+  height: 100px;
 }
 .introduction p{
   width: 100% !important;
@@ -97,9 +118,10 @@ body{
   font-size: 16px;
   line-height: 150%;
   color: black;
-  background-image: url(background1.jpeg);
+  background-image: url(image/background1.jpeg);
   max-width: 1025px;
   text-align: center;
+  background-size: cover;
 }
 
 #all{
@@ -134,15 +156,16 @@ body{
   padding: 0;
 }
 
-
-
 .top{
   width: 100%;
   height: auto;
 }
 
+/* ナビゲーション */
+
 #nav{
   width: 100%;
+  margin-bottom: 50px;
 }
 
 #nav ul{
@@ -160,7 +183,13 @@ body{
   background-color: gray;
   color: white;
   font-weight: bold;
+  border-top: solid 5px orange;
+  border-bottom: solid 5px orange;
+  margin-bottom: 4px;
 }
+
+
+/* 代表取締役社長 */
 
 #kuwano{
   display: flex;
@@ -176,12 +205,27 @@ body{
   border-radius: 60%;
   width: 200px;
   height: 200px;
+  border: 4px double orange;
+}
+
+
+/* 紹介 */
+
+.coment ul{
+  display: grid;
+  grid-template-columns: 150px 150px;
+  list-style:none;
+  margin-top: 0;
 }
 
 .coment{
   display: flex;
   text-align: center;
   justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 100px;
 }
 
 
@@ -195,19 +239,33 @@ body{
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 100px;
 }
 
 .introduction p{
   text-align: center;
   margin: 0;
-  width: 40%;
+  width: 60%; 
+}
+
+.coment img{
+  border: solid 4px white;
+}
+.introduction img{
+  border: solid 4px white;
 }
 
 h2{
+ margin: 0 auto 10px auto;
+  width: 70%;
   margin-top: 20px;
+  margin-bottom: 20px;
   padding-top: 5px;
   padding-bottom: 5px;
-  border-top: black double 4px;
+  border-top: black double 4px ;
   border-bottom: black double 4px;
 }
 
@@ -218,16 +276,18 @@ h2{
   text-align: center;
   background-color: gray;
   margin: 0;
-  border-top: solid 5px orange;
+  /* border-top: solid 5px orange; */
   border-bottom: solid 5px orange;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-top: 0px;
+  margin-bottom: 30px;
 }
 
 #item{
   width: 100%;
   display: flex;
-  height: 371px;
+  height: 400px;
+  border: solid 1px black;
+  /* height: 371px; */
 }
 
 .item{
@@ -244,7 +304,7 @@ h2{
 #item1{
   width: 100%;
   height: 100%;
-  background-image: url(垢の車.jpg);
+  background-image: url(image/red-car.jpg);
   background-size: cover;
   background-position: 98%;
   background-repeat: no-repeat;
@@ -254,14 +314,14 @@ h2{
 #item2{
   width: 100%;
   height: 100%;
-  background-image: url(IMG_0760.jpg);
+  background-image: url(image/IMG_0760.jpg);
   background-size: cover;
 }
 
 #item3{
   width: 100%;
   height: 100%;
-  background-image: url(青い車.jpg);
+  background-image: url(image/blue-car.jpg);
   background-size: cover;
   background-position: 2%;
   margin: 0;
@@ -282,7 +342,7 @@ h2{
 #map{
   width: 80%;
   height: auto;
-  background-image: url(桑野自動車.jpg);
+  background-image: url(image/car-shop.jpg);
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
@@ -290,8 +350,46 @@ h2{
   margin: auto;
   margin-top: 100px;
   color: white;
+  margin-bottom: 50px;
+  border-top: solid 1px white;
+  border-bottom: solid 2px white;
+  border-right: double 4px white;
+  border-left: double 4px white;
 }
+
+#nav-down{
+  width: 100%;
+  margin-bottom: 0px;  
+}
+
+#nav-down ul{
+ list-style: none;
+ margin: 0;
+ padding: 0;
+}
+
+#nav-down ul li{
+  float: left;
+  width: 25%;
+  text-align: center;
+  margin: 0;
+  padding: 4px 0 4px 0;
+  background-color: gray;
+  color: white;
+  font-weight: lighter;
+  border-top: solid 5px orange;
+  border-bottom: solid 1px white;
+  font-size: 10px;
+}
+
 
 #map h3{
   margin: 0;
 }
+
+a{
+  color: white;
+}
+
+
+

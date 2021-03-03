@@ -1,0 +1,132 @@
+
+
+/* レスポンシブデザイン */
+@media screen and (max-width:640px){
+  body{
+    max-width: auto !important;
+  }
+  .shop{
+    font-size: 50%;
+  }
+  #all h2{
+    font-size: 2rem;
+  }
+  #nav ul li{
+    font-size: 1%;
+  }
+  /* .container{
+    grid-template-columns: 1fr;
+  } */
+#footer{
+  font-size: 7px;
+}
+
+}
+
+/* PC CSS */
+body{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url(image/background1.jpeg);
+  background-size: cover;
+  margin: 0 auto;
+}
+
+#all{
+  text-align: center;
+}
+
+h1{
+  background-color: gray;
+  border-top: orange double 4px;
+  border-bottom: orange double 4px;
+}
+
+h2{
+  padding-bottom: 30px;
+  border-bottom: black double 4px;
+}
+
+#all{
+  width: 80%;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#nav{
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+#nav ul{
+ list-style: none;
+ margin: 0;
+ padding: 0;
+}
+
+#nav ul li{
+  float: left;
+  width: 25%;
+  text-align: center;
+  margin: 0;
+  padding: 4px 0 4px 0;
+  background-color: gray;
+  color: white;
+  font-weight: bold;
+  border-top: solid 5px orange;
+  border-bottom: solid 5px orange;
+  margin-bottom: 4px;
+}
+
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  grid-template-rows: 400px 400px;
+  text-align: center;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+  width: 1024px;
+}
+
+/* .container p{
+  width: 70%;
+  text-align: center;
+} */
+
+.item{
+  /* background-color: skyblue; */
+  padding: 10px;
+  margin: auto 0;
+  text-align: center;
+}
+
+.container p{
+  font-size: 13px;
+}
+
+#footer{
+  width: 100%;
+  padding: 3px 0 3px 0;
+  text-align: center;
+  background-color: gray;
+  margin: 0;
+  /* border-top: solid 5px orange; */
+  /* border-bottom: solid 5px orange; */
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+img{
+  border: solid 4px white;
+}
+
+
+
+
+
